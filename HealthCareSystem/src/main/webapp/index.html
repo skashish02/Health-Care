@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HMS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+    <script src="model.js"></script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img class="logo" src="https://res.cloudinary.com/dibxofxto/image/upload/v1709140407/sxt7elegffrxml6hoh2t.jpg" alt="logo"/>
+                <!-- <h2 style="margin-left: 100px; margin-top: 11px; color: rgb(241, 100, 6); font-size: 40px;-webkit-text-stroke: 2px rgb(87, 48, 4);">Care Swift</h2> -->
+            </div>
+            
+            <div class="menu">
+               
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#team">ABOUT US</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                 <!--    <li><a href="Login.html">ADMIN</a></li>    -->
+                </ul>
+            </div>
+
+        
+
+        </div>
+        <div class="content">
+           
+            <h1>Navigate, <br><span>Simplify,</span> <br>Wellness Swiftly</h1>
+            <br>
+            <p class="par">Embark on a health journey like never before with Care Swift.  <br>Streamlining diagnostic excellence, we empower you to take control of your well-being. 
+                <br> From comprehensive tests to personalized appointments, experience healthcare that<br> is swift, precise, and caring. Your path to a healthier tomorrow starts here. </p>
+               
+        
+
+               <div class="form">
+                   <button class="btnn" id="admin-login" onclick="showModal('doctors')">Login as Doctors</button>  
+                    <button class="btnn" id ="user-login" onclick="showModal('users')">Login as User</button>
+                    <p class="link">Don't have an account?<br>
+                    <a href="signup.html" >Sign up </a> here </p>
+                    
+                    <br/>
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtoAKO16Fxsytrvajx9FGZ22SA9sSUJ03haw&usqp=CAU' width={'80%'} height={'80%'} />
+                    
+                    
+                </div>
+                <div class="overlay" onclick="closeModal()"></div>
+
+                <div class="login-form">
+                    <div>
+                    <span class="login-form-close" id="close" onclick="closeModal()">&times;</span>
+                    </div>
+                    <form action="login">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" name="username" placeholder="Enter Username Here" required><br>
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" name="password" placeholder="Enter Password Here" required>
+                        <input type="text" id="login-type" name="login-type" value="doctors" style="display: none;">
+                        
+                    <br><br>
+                    <!-- <button type="submit" class="btnn"><a href="cust_list.html">Login</a></button>  -->
+                    <button type="submit" class="btnn">Login</button>
+                    <div class="group">
+                        <span><a href="#">Forgot Password</a></span>
+                        <span ><a id="supb" href="signup.html">SignUP</a></span>
+                    </div>
+                    
+                </form>
+                
+                </div>
+                
+                
+              
+                
+              
+        </div>
+    </div>
+     <div class="bg" id="services">
+               <h1 class="head-text" style="text-align: center; padding: 5% 10% 5% 10% ;">
+               Services
+                 </h1>
+        
+             <div class="row " style=" box-sizing: border-box; margin-left: 120px;" >
+                 <div class="Service_column">
+                
+                        <li>Online Appointment Booking</li><br/>
+                        <li>Secure Test Result Access </li><br/>
+                        <li> Home Sample Collection</li><br/>
+                        <li>Teleconsultation Services</li><br/>
+                        <li>Comprehensive Health Packages</li><br/>
+                    
+                  </div>
+                 <div class="Service_column" >
+                    
+                        <li >Customized Reporting
+                        </li><br/>
+                        <li>Electronic Health Records (EHR)
+                        </li><br/>
+                        <li> Second Opinion Services
+                        </li><br/>
+                        <li>
+                            Insurance Verification Assistance</li><br/>
+                        <li>Client Portal for Laboratories
+                        </li><br/>
+                  
+                    </div>
+                
+                </div>
+    </div>
+     <div  class="bg"  id="team">
+        <h3 class="head-text" style="padding-top: 2%;">Our Team</h3><br/><br/>
+        <div>
+            <div class="row">
+                <div class="column"  >
+                    <img class="col-img" src=" https://res.cloudinary.com/dibxofxto/image/upload/v1708323789/pe3nz1sezkl0gtdyie6h.jpg" alt="Laya" class="aboutimg"/><br>
+                    <br>
+                    <h4>POLICE LAYASREE</h4><br>
+                    <p>20J41A05P1</p>
+                    <p>reddy.police125@gmail.com</p>
+                    <p>Malla Reddy engineering College</p><br>
+                    <button type="submit" name="contact">Contact</button>
+                </div>
+                <div class="column" >
+                    <img class="col-img"src="https://res.cloudinary.com/dibxofxto/image/upload/v1708323815/ykndg1483yr4bdlzxbz5.jpg" alt="lasya" class="aboutimg"/><br><br>
+                    <h4>J S S Lasya Priya</h4><br>
+                    <p>20RA1A6719</p>
+                    <p>lasyaPriya229@gmail.com</p>
+                    <p>Kommuri Pratap Reddy Institute of Technology</p><br>
+                    <button type="submit" name="contact">Contact</button>
+                </div>
+                <div class="column">
+                    <img class="col-img"src="https://res.cloudinary.com/dibxofxto/image/upload/v1708323815/kzljposbtnuzwk8yktzm.jpg" alt="kashish" class="aboutimg"/><br><br>
+                    <h4>Kashish Singh</h4><br>
+                    <p>20RA1A6704</p>
+                    <p>singhkashish0206@gmail.com</p>
+                    <p>Kommuri Pratap Reddy Institute of Technology</p><br>
+                    <button type="submit" name="contact">Contact</button>
+                  </div>
+                <div class="column" >
+                    <img class="col-img"src="https://res.cloudinary.com/dibxofxto/image/upload/v1708323814/jvyutpc546nblqgybwxe.jpg" alt="Teja" class="aboutimg"/><br><br>
+                    <h4>Y Shiva Sai Teja</h4><br>
+                    <p>21RA5A6704</p>
+                    <p>yshivasaiteja@gmail.com</p>
+                    <p>Kommuri Pratap Reddy Institute of Technology</p><br>
+                    <button type="submit" name="contact">Contact</button>
+                </div>
+              </div>  
+        </div>
+     
+    </div>
+    
+     <div class="bg" id="contact" style="height: 75vh;">
+    <h3 class="head-text" style="text-align: center; padding-top: 10%; margin-left: -30px;">Contact US</h3><br/><br/>
+    <div class="contact" style="margin-bottom: 100vh;">
+        
+            
+                 <a href="https://www.facebook.com/" target="_blank"  class="fa fa-facebook"></a>  &nbsp;
+               <a href="https://twitter.com/?lang=en" target="_blank"class="fa fa-twitter"></a> &nbsp;
+                <a href="https://www.google.co.in/" class="fa fa-google" target="_blank"></a> &nbsp;
+                <a href="https://in.linkedin.com/" class="fa fa-linkedin" target="_blank"></a> &nbsp;
+                <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a> &nbsp;
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a> &nbsp;
+               
+            </div>
+            
+          
+   </div>
+
+     <footer> 
+    <div class="footer">
+            <div class="footer-container footer-cities">
+                <div class="footer-city">
+                    <a href="#">Home</a>   
+                </div>
+                <div class="footer-city">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="footer-city">
+                    <a href="#team">About</a>
+                </div>
+                <div class="footer-city">
+                    <a href="#contact">Contact Us</a>
+               
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright">© 2024 Copyright Swift Care </div>
+            </div>
+</footer>
+    
+    
+</body>
+</html>in

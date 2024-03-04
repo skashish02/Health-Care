@@ -1,0 +1,135 @@
+body{
+     background-image: url("https://img.freepik.com/free-photo/abstract-red-fractal-wallpaper_1017-3411.jpg"); 
+    background-color:floralwhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-container {
+    max-width: 800px;
+    padding: 20px 20px;
+    margin: auto;
+
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 64px 24px;
+    }
+}
+.property-card {
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    border-color: beige;
+
+}
+
+.navbar-nav{
+   
+    justify-content: flex-end;
+    align-items: end;
+    display: block;
+    
+}
+
+
+.nav-link{
+    color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.image-container {
+    width: 40%;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+    margin-top:5%;
+
+}
+
+.property-name{
+    font-size:20px;
+    font-weight: bold;
+    color:#e20ebb;
+}
+
+.content-container {
+    width: 40%;
+    float: left;
+    padding: 15px;
+}
+
+.star-container {
+    font-size: 15px;
+    color: red;
+}
+
+.interested-container {
+    position: relative;
+    font-size: 14px;
+    color: #e20e0e;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.interested-container i {
+    position: relative; 
+    left: 0;
+    margin-left: 180%; 
+}
+
+.interested-text{
+    justify-content: flex-end;
+    display: flex;
+}
+.detail-container {
+    margin-top:0px;
+    color: antiquewhite;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+input[type="button"] {
+    background-color: #ff7200;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-btn {
+    display: block;
+    margin: 15px auto;
+    background-color: #ff7200;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.card-btn span {
+    margin-left: 5px;
+}
+
+.card-btn a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }

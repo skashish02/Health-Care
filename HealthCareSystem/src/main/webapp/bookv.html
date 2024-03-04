@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="bookv.css">
+</head>
+
+<body>
+
+    <form action="bookap">
+        <div class="center">
+            <h2>Appointment Booking</h2>
+        </div>
+
+        <div class="left-side">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" required>
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="appointmentDate">Appointment Date</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required><br>
+        </div>
+
+        <div class="right-side">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="center" name="center" required>
+                <option selected disabled value="">select center</option>
+                <option selected disabled value="">select center</option>
+                <option selected disabled value="">select center</option>
+                <option selected disabled value="">select center</option>
+                
+                
+            </select>
+            
+            <label for="appointmentTime">Appointment Time</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+            <br>
+             
+           
+        </div>
+        <label for="desc">Description</label>
+            <textarea id="desc" name="content" rows="2" cols="20"></textarea><br>
+       
+
+        <input type="submit" value="Book Appointment">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image:url( "https://res.cloudinary.com/dibxofxto/image/upload/v1708251505/qyglxxfp7gdaxmuftuil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 20px;
+    
+}
+
+.grid-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+
+}
+
+.card-img {
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 25%;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    color: antiquewhite;
+}
+
+.card-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+
+.card-btn {
+    display: block;
+    margin: 15px auto;
+    background-color: #ff7200;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.card-btn span {
+    margin-left: 5px;
+}
+
+.card-btn a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }

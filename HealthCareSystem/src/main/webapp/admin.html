@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+background-position: center;
+background-size: cover;
+height: auto;
+color:white;
+z-index: 9;
+background-image:url("https://img.freepik.com/premium-vector/black-tech-concept-background-with-orange-glowing-neon-lines_88343-5829.jpg?w=900");
+}
+
+.sidebar {
+  top:0%;
+  width:15%;
+  background-color: #050505;
+ opacity: 0.8;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.sidebar a {
+  display: block;
+  font-size: 18px;
+  color: rgb(245, 243, 243);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+    background-color: grey;
+  color: #ff7200;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #ff7200;
+  color: white;
+  
+  font-size: 22px;
+
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100vh;
+}
+
+div.content h1
+{  text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    -webkit-text-stroke: 1px rgb(160, 124, 80);
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 100vh;
+}
+
+div.content h1
+{  text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 1px rgb(160, 124, 80);
+    
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+table:hover
+{
+    box-shadow: 10px 10px 10px 10px #ff7200;
+}
+
+td,
+ th {
+  border: 2px solid white;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.form{
+  width:750px;
+  height: 400px;
+  background:transparent;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  text-align: center;
+  position:absolute;
+  top:125%;
+  left:25%;
+  transform: translate(0%,-5%);
+  border-radius: 10px;
+  box-shadow: 0px, 0px, 10%, 30px, #fff;
+  padding: 25px;
+  transition: 1s;
+  z-index: 10;
+}
+.form:hover
+{
+    box-shadow: 10px 10px 10px 10px #fff;
+}
+.form span
+{
+position: absolute;
+right: 40px;
+top: 40px;
+width:30px;
+height: 30px;
+color:rgb(245, 242, 242);
+
+cursor: pointer;
+}
+
+.form h2{
+  
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
+
+.form input{
+
+  background: transparent;
+  border-bottom: 2px solid #fefdfd;
+  border-top: none;
+  border-right:none;
+  border-left: none;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 7%;
+  font-family: sans-serif;
+}
+
+
+
+.form input:focus{
+  outline: none;
+  
+}
+
+
+.form .link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a{
+  text-decoration: none;
+  color: #ff7200;
+}
+
+.dform{
+  width:750px;
+  height: 620px;
+  background:transparent;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #000;
+  text-align: center;
+  position:absolute;
+  top:325%;
+  left:25%;
+  transform: translate(0%,-5%);
+  border-radius: 10px;
+  box-shadow: 0px, 0px, 10%, 30px, #fff;
+  padding: 25px;
+  transition: 1s;
+  z-index: 10;
+}
+.dform:hover
+{
+    box-shadow: 10px 10px 10px 10px #fff;
+}
+
+.dform span
+{
+position: absolute;
+right: 40px;
+top: 40px;
+width:30px;
+height: 30px;
+color:rgb(245, 242, 242);
+
+cursor: pointer;
+}
+.dform h2{
+  
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
+
+.dform input{
+  
+  background: transparent;
+  border-bottom: 2px solid #fefdfd;
+  border-top: none;
+  border-right:none;
+  border-left: none;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 10%;
+  font-family: sans-serif;
+}
+
+
+
+.dform input:focus{
+  outline: none;
+  
+}
+
+
+.dform .link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.dform .link a{
+  text-decoration: none;
+  color: #ff7200;
+}
+
+
+.addc-btn{
+  width: 320px;
+  height: 35px;
+  margin-top: 70px;
+  border-radius: 10px;
+  border: none;
+  background-color:rgb(255, 255, 255)200;
+  color: white;
+  font-size: 18px;
+  cursor:pointer;
+}
+.addc-btn:hover{
+  background: #fff;
+  color: #ff7200;
+}
+.addt
+{
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color:#ff7200;
+  color: white;
+  
+  cursor:pointer;
+}
+.addt:hover
+{
+    background: #fff;
+  color: #ff7200;   
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-top: -10px;
+}
+.para-2 a {
+  color: #ff7200;
+}
+
+
+.button:active{
+     transform:scale(0.95);
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h3>Admin Page</h3>
+  <a href="#Clist">Centers List</a>
+  <a href="#AddCenter">Add Center</a>
+  <a href="#Dlist">Doctors List</a>
+  <a href="#AddDoctor">Add Doctor</a>
+  <a href="#Appointments">Appointments</a>
+  <a href="#Customer Details">Customer Details</a>
+  <a class="" href="index.html">LogOut</a>
+</div>
+
+
+<div id="Clist" class="content active">
+    <h1>
+        Center List
+    </h1>
+    <div>
+        <table>
+            <tr>
+              <th>Center Id</th>
+              <th>Center Name</th>
+              <th>City</th>
+              <th>Dealer NAme</th>
+              <th>Tests</th>
+            </tr>
+            <tbody id="tbody">
+            
+            </tbody>
+            
+          </table>
+          
+
+    </div>
+</div>
+<div id="AddCenter" class="content">
+    <h1>
+       Add Center
+    </h1>
+    <form class="form" action = "addcenter" method="post">
+    <br><br><br><br>
+        <input type="text" id="cname" name="cname" placeholder="Enter Center Name"  required/>
+                &nbsp;&nbsp;&nbsp;
+         <input type="text" id="dname" name="dname" placeholder="Enter Dealer Name"  required/>
+                &nbsp;&nbsp;&nbsp;<br>
+
+        
+                <label style="color: rgb(252, 251, 251);">
+                    Select City
+                </label>
+                <select name="city" id="city" style="color: grey; margin-top: 60px;" >
+                     <option value="Hyderabad">Hyderabad</option>
+                      <option value="Banglore">Banglore</option>
+                      <option value="Mumbai">Mumbai</option>
+                </select>
+                <br>
+
+                <label style="color: rgb(253, 252, 252); margin-top: 3%;"> 
+                    Tests:&nbsp;&nbsp;
+                
+                 </label> 
+                  <label for="Test1">Sugar Test </label><input style="" type="checkbox" id="Test1" name="options[]" value="sugar"  >
+                  <label for="Test2">Blood Test </label><input type="checkbox" id="Test2" name="options[]" value="blood" >
+                  <label for="Test3">BP Test </label><input type="checkbox" id="Test3" name="options[]" value="bp" >
+                  <label for="Test4">DNA Test </label><input type="checkbox" id="Test4" name="options[]" value="DNA" >
+                  <label for="Test5">Urine Test </label><input type="checkbox" id="Test5" name="options[]" value="urine" >
+                  <label for="Test6">Other Test </label><input type="checkbox" id="Test6" name="options[]" value="other" >
+                          
+ 
+                <button class="addc-btn" type="submit">Add Center</button>
+              
+    </form>
+</div>
+
+<div id="Dlist" class="content ">
+    <h1>
+        Doctors List
+    </h1>
+    <div>
+        <table>
+            <tr>
+              <th>Doctor Id</th>
+              <th>Doctor Name</th>
+              <th>Mobile</th>
+              <th>Gender</th>
+              <th>Sepcialisation</th>
+              <th>Experience</th>
+              <th>UserName</th>
+              <th>Password</th>
+              
+            </tr>
+            <tbody id="doc">
+            
+            </tbody>
+            
+          </table>
+          
+
+    </div>
+</div>
+<div id="AddDoctor" class="content">
+    <h1>
+       Add Doctor
+    </h1>
+    <form class="dform" action = "addDoctor" method="post">
+        <input type="text" id="d_name" name="d_name" placeholder="Enter Doctor Name"  required/>
+                &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+         <input type="email" id="email" name="email" placeholder="Enter Email"  required/>
+                &nbsp;&nbsp;&nbsp;<br>
+            <input type="text" id="phone_number" name="phone number" placeholder="Enter Mobile"  required/>
+                &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+         <input type="number" id="age" name="age" placeholder="Enter Age"  required/>
+                &nbsp;&nbsp;&nbsp;<br>
+                
+                <select name="gender" id="gender" style="color: grey; margin-top: 60px;" >
+                     <option>Select Gender</option>
+                     <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                </select>  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;
+                <textarea rows="4" cols="25" name="address" id="address" palceholder="Enter Address" style="margin-top:5%"></textarea>
+               <br>
+                <input type="text" id="Specialist" name="Specialist" placeholder="Enter Specialisation"  required/>
+                &nbsp;&nbsp;&nbsp;
+               
+                 <input type="number" id="exp" name="exp" placeholder="Enter Experience"  required/>
+                &nbsp;&nbsp;&nbsp;<br>
+                 <input type="text" id="username" name="username" placeholder="Generate Username"  required/>
+                &nbsp;&nbsp;&nbsp;
+                 <input type="text" id="password" name="password" placeholder="Generate password"  required/>
+                &nbsp;&nbsp;&nbsp;
+              
+                <input type="number" placeholder="Enter Pincode" name="pincode" id="pincode"/> 
+                 <br>
+                
+                 <button class="addc-btn" >Add Doctor</button>
+              
+ 
+                
+    </form>
+</div>
+<div id="Appointments"class="content" style="margin-top:22%">
+    <h1>
+        Appointments
+    </h1>
+    <div>
+        <table>
+            <tr>
+              <th>App Id</th>
+              <th>Username</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+            <tbody id="apps">
+            
+            </tbody>
+            
+          </table>
+          
+
+    </div>
+</div>
+<div id="Customer Details" class="content">
+    <h1>
+       Customer Details
+    </h1>
+    <div>
+        <table>
+            <tr>
+              <th>User Id</th>
+              <th> Name</th>
+              <th> Mobile </th>
+              <th>Email</th>
+              <th>DOB</th>
+              <th>Gender</th>
+              <th>Username</th>
+              <th>Password</th>
+              <tbody id="usdls">
+            
+            </tbody>
+
+            </tr>
+           
+           
+          </table>
+          
+
+    </div>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var approveButtons = document.querySelectorAll('.addt');
+
+    approveButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            var appointmentId = this.getAttribute('a_id');
+            window.location.href = 'approve?a_id=' + appointmentId;
+        });
+    });
+});
+</script>
+
+
+
+</body>
+</html>

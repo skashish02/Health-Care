@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/free-photo/abstract-red-fractal-wallpaper_1017-3411.jpg");
+    
+}
+
+.navbar{
+    padding-top: 2%;
+    width: 50%;
+    height: 5%;
+    margin: auto;
+}
+
+
+.logo{
+   left: 1%;
+  position: fixed;
+    width: 90px;
+    float: left;
+    border-radius: 20%;
+    padding-top: 5px;
+    margin-top: 5px
+}
+
+.head-text
+{ top: 10px;
+    font-size: 70px;
+    color:burlywood;
+    text-align: center;
+    text-shadow:chocolate;
+    text-anchor: middle;
+    text-decoration-color: antiquewhite;
+}
+
+.menu{
+    width: 50%;
+    float:right;
+    margin-left:60%;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    left:50%;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #d69c6d;
+}
+
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.group
+{
+  display: flex;
+  justify-content: space-between;
+}
+.group span a
+{
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    top: 10px;
+}
+
+.group span a:focus
+{
+    text-decoration: underline;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #c0936f;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+
+.bg
+{
+   
+    width: 100%;
+background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+background-position: center;
+background-size: cover;
+height: 100vh;
+background-image: url("https://img.freepik.com/free-photo/abstract-red-fractal-wallpaper_1017-3411.jpg");
+   
+}
+
+.row {
+  margin-top: -5%;
+  margin-left:auto;
+  margin-bottom: -5%;
+    padding: 10% 10% 10% 10% ;
+  display: flex;
+  color: #fff;
+ 
+}
+.col-img
+  {
+    height: 100px;
+    width: 100px;
+  }
+.column { 
+    color: white;
+    background-color:rgb(56, 54, 51);
+    font-size: large;
+    float:none;
+    opacity: 0.7;
+    width: 50%;
+    padding: 25px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.column:hover
+{
+    opacity: 1;
+}
+/* Create two equal columns that sits next to each other */
+.Service_column {
+    
+    
+    padding-bottom: 20%;
+    color:#fff;
+    font-weight: 800;
+    font-size: large;
+  
+    justify-content:center;
+  flex: 40%;
+  opacity: 0.5px;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      height: 500%;
+    }
+  }
+
+.contact
+{
+    padding: 1% 28% 0% ;
+    margin-left: 5%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.5;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+footer{
+    position:absolute;
+    width: 100%;
+    height: 125px;
+    margin-bottom: auto;
+    background-color: rgb(95, 35, 1);
+}
+footer a{
+    color: white;
+    margin-left: 25px;
+}
+
+.footer-container {
+    padding: 35px;
+}
+
+.footer-cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-city {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    .footer-city {
+        width: 100%;
+    }
+}
+
+.footer-copyright {
+    color: #ada5a5;
+    text-align: center;
+    padding-top: 0px;
+}
+
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+ 
+/* login btn css*/
+
+
+.overlay
+{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(24, 20, 16) ;
+  z-index: -1;
+  opacity: 1;
+  top: 0% ;
+  left: 0%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.showoverlay
+{
+  opacity: 0.85;
+  z-index: 1;
+}
+.login-form{
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+  text-align: center;
+  position:absolute;
+  top:-250%;
+  left:35%;
+  transform: translate(0%,-5%);
+  border-radius: 10px;
+  box-shadow: 0px, 0px, 10px, 30px, #fff;
+  padding: 25px;
+  transition: 1s;
+  z-index: 10;
+}
+
+.showlogin-form
+{
+top:-4%; 
+}
+
+.login-form-close
+{
+position: absolute;
+right: 40px;
+top: 40px;
+width:10px;
+height: 10px;
+color:grey;
+
+cursor: pointer;
+}
+.login-form h2{
+  
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 8px;
+}
+
+.login-form input{
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right:none;
+  border-left: none;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 15%;
+  font-family: sans-serif;
+}
+
+.login-form input:focus{
+  outline: none;
+  
+}
+.login-btnn{
+  width: 240px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.login-btnn:hover{
+  background: #fff;
+  color: #ff7200;
+}
+.login-btnn a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.login-form .link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.login-form .link a{
+  text-decoration: none;
+  color: #ff7200;
+}
+
+.google-map {
+     padding-bottom: 30%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 50%;
+     width:  50%;
+     left: 25%;
+    
+     position: absolute;
+}
+
+.google-map iframe:hover{
+	 height: 55%;
+     width:  55%;
+    margin-top:'8%';
+    border-radius: 2%;
+    border: #ff7200 solid 5px;
+     transition: 0.5s;
+  
+
+  }
